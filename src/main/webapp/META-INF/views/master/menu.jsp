@@ -72,6 +72,9 @@
 			<acme:menu-suboption code="master.menu.consumer.offer" action="/authenticated/offer/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.consumer.challenges" action="/authenticated/challenges/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.consumer.offer.create" action="/authenticated/offer/create" />
+
 		</acme:menu-option>
 
 	</acme:menu-left>
