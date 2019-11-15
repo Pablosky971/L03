@@ -39,6 +39,11 @@
 				action="/administrator/customisationParameters/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.challenges" action="/administrator/challenges/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenges/create" />
+		
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

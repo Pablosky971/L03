@@ -10,24 +10,25 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.challenges;
+package acme.features.administrator.challenges;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.challenges.Challenges;
+import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractShowService;
+import acme.framework.entities.Administrator;
+import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AuthenticatedChallengesShowService implements AbstractShowService<Authenticated, Challenges> {
+public class AdministratorChallengesCreateService implements AbstractCreateService<Administrator, Challenges> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedChallengesRepository repository;
+	private AdministratorChallengesRepository repository;
 
 	// AbstractCreateService<Authenticated, Consumer> ---------------------------
 
@@ -40,6 +41,15 @@ public class AuthenticatedChallengesShowService implements AbstractShowService<A
 	}
 
 	@Override
+	public void bind(final Request<Challenges> request, final Challenges entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
+
+		request.bind(entity, errors);
+	}
+
+	@Override
 	public void unbind(final Request<Challenges> request, final Challenges entity, final Model model) {
 		assert request != null;
 		assert entity != null;
@@ -49,16 +59,25 @@ public class AuthenticatedChallengesShowService implements AbstractShowService<A
 	}
 
 	@Override
-	public Challenges findOne(final Request<Challenges> request) {
-		assert request != null;
-
+	public Challenges instantiate(final Request<Challenges> request) {
 		Challenges result;
-		int id;
 
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		result = new Challenges();
 
 		return result;
+	}
+
+	@Override
+	public void validate(final Request<Challenges> request, final Challenges entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
+	}
+
+	@Override
+	public void create(final Request<Challenges> request, final Challenges entity) {
+
+		this.repository.save(entity);
 	}
 
 }

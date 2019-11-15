@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.challenges;
+package acme.features.administrator.challenges;
 
 import java.util.Collection;
 
@@ -20,16 +20,16 @@ import org.springframework.stereotype.Service;
 import acme.entities.challenges.Challenges;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedChallengesListService implements AbstractListService<Authenticated, Challenges> {
+public class AdministratorChallengesListService implements AbstractListService<Administrator, Challenges> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedChallengesRepository repository;
+	private AdministratorChallengesRepository repository;
 
 	// AbstractCreateService<Authenticated, Consumer> ---------------------------
 
