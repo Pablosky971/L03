@@ -52,6 +52,7 @@ master.menu.provider.investor = Listar Investigadores
 master.menu.provider.announcement = Listar Anuncios
 master.menu.provider.companyRecords = Listar Compañias
 master.menu.provider.requests = Listar Solicitaciones
+master.menu.provider.requests.create = Crear Solicitacion
 master.menu.provider.offer = Listar Ofertas
 master.menu.provider.challenges= Listar Desafios
 
