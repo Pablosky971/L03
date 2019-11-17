@@ -41,8 +41,10 @@ master.menu.administrator.announcement = Listar Anuncios
 master.menu.administrator.announcement.create = Crear Anuncio
 master.menu.administrator.investor = Listar Investigadores
 master.menu.administrator.companyRecords = Listar compañias
-master.menu.administrator.customisationParameters = Parametros de personalización
+master.menu.administrator.customisationParameters = Listar parametros de personalización
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.companyRecords = Listar Compañias
+master.menu.administrator.companyRecords.create = Crear Compañia
 
 # master.menu.provider ########################################################
 

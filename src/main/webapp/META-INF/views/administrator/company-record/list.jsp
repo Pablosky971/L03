@@ -17,7 +17,8 @@
 
 <acme:list>
 
-	<acme:list-column code="administrator.customisationParameters.list.label.words" path="spamWords" width="90%" />
-	<acme:list-column code="administrator.customisationParameters.list.label.threshold" path="threshold" width="10%" />
+	<acme:list-column code="administrator.companyRecord.list.label.name" path="nameExtra" width="30%" />
+	<acme:list-column code="administrator.companyRecord.list.label.sector" path="sector" width="30%" />
+	<acme:list-column code="administrator.companyRecord.list.label.activities" path="activities" width="40%" />
 
 </acme:list>

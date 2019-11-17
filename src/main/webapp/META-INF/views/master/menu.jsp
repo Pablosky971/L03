@@ -33,12 +33,16 @@
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
 			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/list" />
-			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.customisationParameters"
 				action="/administrator/customisationParameters/list" />
 			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/list" />
+			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.companyRecords" action="/administrator/companyRecord/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.companyRecords.create" action="/administrator/companyRecord/create" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
