@@ -35,6 +35,9 @@ public class AuthenticatedRequestsController extends AbstractController<Authenti
 	@Autowired
 	private AuthenticatedRequestsShowService	showService;
 
+	@Autowired
+	private AuthenticatedRequestsCreateService	createService;
+
 
 	// Constructors -----------------------------------------------------------
 
@@ -42,6 +45,7 @@ public class AuthenticatedRequestsController extends AbstractController<Authenti
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 
 }
