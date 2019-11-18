@@ -33,11 +33,11 @@
     create table `challenges` (
        `id` integer not null,
         `version` integer not null,
+        `deadline` datetime(6),
         `description` varchar(255),
         `goal1` varchar(255),
         `goal2` varchar(255),
         `goal3` varchar(255),
-        `moment` datetime(6),
         `reward1` varchar(255),
         `reward2` varchar(255),
         `reward3` varchar(255),

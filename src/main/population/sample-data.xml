@@ -188,7 +188,7 @@
 
 	<bean id="challenge01" class="acme.entities.challenges.Challenges">
 		<property name="title" value="Competicion de ajedrez" />
-		<property name="moment" value="2020/07/07 19:10" />
+		<property name="deadline" value="2020/07/07 19:10" />
 		<property name="description" value="premios" />
 		<property name="goal1" value="ganar la competencia" />
 		<property name="reward1" value="una medalla de oro" />
@@ -200,7 +200,7 @@
 
 	<bean id="challenge02" class="acme.entities.challenges.Challenges">
 		<property name="title" value="Competicion de baloncesto" />
-		<property name="moment" value="2020/07/07 19:10" />
+		<property name="deadline" value="2020/07/07 19:10" />
 		<property name="description" value="premios" />
 		<property name="goal1" value="ganar la competencia" />
 		<property name="reward1" value="una medalla de oro" />
@@ -212,7 +212,7 @@
 
 	<bean id="challenge03" class="acme.entities.challenges.Challenges">
 		<property name="title" value="Competicion de futbol" />
-		<property name="moment" value="2020/07/07 19:10" />
+		<property name="deadline" value="2020/07/07 19:10" />
 		<property name="description" value="premios" />
 		<property name="goal1" value="ganar la competencia" />
 		<property name="reward1" value="una medalla de oro" />

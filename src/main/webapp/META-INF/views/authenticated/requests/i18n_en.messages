@@ -16,6 +16,8 @@ authenticated.requests.form.label.reward= Reward:
 authenticated.requests.form.label.ticker= Ticker:
 authenticated.requests.form.button.return= Return
 authenticated.requests.form.button.create = Create
+authenticated.requests.error.must-accept = You must accept the creation of this request
+authenticated.request.label.accept = Are you sure of this creation?
 
 authenticated.requests.list.label.moment= Moment
 authenticated.requests.list.label.title= Title

@@ -40,9 +40,13 @@
 			<acme:menu-suboption code="master.menu.administrator.customisationParameters"
 				action="/administrator/customisationParameters/list" />
 			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.administrator.investor.create" action="/administrator/investor/create" />
+			<acme:menu-suboption code="master.menu.administrator.challenges" action="/administrator/challenges/list" />
 			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.administrator.investor" action="/administrator/investor/list" />
+			<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenges/create" />
+		  <acme:menu-separator />
+      <acme:menu-suboption code="master.menu.administrator.investor" action="/administrator/investor/list" />
+      <acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.investor.create" action="/administrator/investor/create" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
