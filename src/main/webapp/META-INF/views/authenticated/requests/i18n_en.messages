@@ -15,6 +15,7 @@ authenticated.requests.form.label.description= Description:
 authenticated.requests.form.label.reward= Reward:
 authenticated.requests.form.label.ticker= Ticker:
 authenticated.requests.form.button.return= Return
+authenticated.requests.form.button.create = Create
 
 authenticated.requests.list.label.moment= Moment
 authenticated.requests.list.label.title= Title
