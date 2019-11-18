@@ -16,6 +16,9 @@ authenticated.requests.form.label.reward= Recompensa:
 authenticated.requests.form.label.ticker= Teletipo:
 authenticated.requests.form.button.return= Volver
 authenticated.requests.form.button.create = Crear
+authenticated.requests.error.must-accept = Debes aceptar la creacion de la solicitud
+authenticated.request.label.accept = ¿Seguro que quieres crear esta solicitud?
+
 
 authenticated.requests.list.label.moment= Momento
 authenticated.requests.list.label.title= Titulo

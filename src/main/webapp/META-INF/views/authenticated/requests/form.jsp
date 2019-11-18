@@ -24,7 +24,7 @@
 	<acme:form-textarea code="authenticated.requests.form.label.description" path="description" />
     <acme:form-textbox code="authenticated.requests.form.label.reward" path="reward" />
     <acme:form-textbox code="authenticated.requests.form.label.ticker" path="ticker" />
-	
+	<acme:form-checkbox code="authenticated.request.label.accept" path="accept"/>
 	 <acme:form-submit test="${command == 'create' }"
 	 code="authenticated.requests.form.button.create" 
 	 action="/authenticated/requests/create"/>
