@@ -16,6 +16,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="administrator.announcement.list.label.deadline" path="deadline" width="20%" />
-	<acme:list-column code="administrator.announcement.list.label.title" path="title" width="40%" />
+	<acme:list-column code="administrator.challenges.list.label.deadline" path="deadline" width="10%" />
+	<acme:list-column code="administrator.challenges.list.label.title" path="title" width="20%" />
+	<acme:list-column code="administrator.challenges.list.label.description" path="description" width="10%" />
 </acme:list>

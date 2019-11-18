@@ -9,7 +9,7 @@
 # they accept any liabilities with respect to them.
 
 authenticated.challenges.form.label.title= Titulo:
-authenticated.challenges.form.label.moment= Momento:
+authenticated.challenges.form.label.deadline= Fecha limite:
 authenticated.challenges.form.label.description=Descripcion:
 authenticated.challenges.form.label.goal1= Objetivo para oro:
 authenticated.challenges.form.label.reward1= Recompensa para oro:
@@ -20,7 +20,7 @@ authenticated.challenges.form.label.reward3= Recompensa para bronce:
 authenticated.challenges.form.button.return= Volver
 
 
-authenticated.challenges.list.label.moment= Momento
+authenticated.challenges.list.label.deadline= Fecha limite
 authenticated.challenges.list.label.title= Titulo
 authenticated.challenges.list.label.description= Descripción
 

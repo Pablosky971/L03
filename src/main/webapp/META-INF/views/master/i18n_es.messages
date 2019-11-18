@@ -41,6 +41,9 @@ master.menu.administrator.announcement = Listar Anuncios
 master.menu.administrator.announcement.create = Crear Anuncio
 master.menu.administrator.investor = Listar Investigadores
 master.menu.administrator.investor.create = Crear Investigador
+master.menu.administrator.challenges = Listar Retos
+master.menu.administrator.challenges.create = Crear Reto
+master.menu.administrator.investor.create = Crear Investigador
 master.menu.administrator.customisationParameters = Parametros de personalización
 master.menu.administrator.shutdown = Parar el sistema
 

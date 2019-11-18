@@ -324,8 +324,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>182</x>
-      <y>322</y>
+      <x>189</x>
+      <y>343</y>
       <w>224</w>
       <h>63</h>
     </coordinates>
@@ -339,8 +339,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>196</x>
-      <y>420</y>
+      <x>133</x>
+      <y>504</y>
       <w>224</w>
       <h>63</h>
     </coordinates>
@@ -355,26 +355,29 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>21</x>
-      <y>504</y>
+      <x>651</x>
+      <y>728</y>
       <w>252</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>Requests
+    <panel_attributes>Challenges
 --
 + title: String {NotBlank}
-+ moment: Date{Temporal(TIMESTAMP), Past}
-+ deadline Date{Temporal(TIMESTAMP), Future}
++ deadline: Date{Temporal(TIMESTAMP), Future}
 + description: String {NotBlank}
-+ reward: String {NotBlank}
-+ ticker String{NotBlank, Pattern(regexp = "R\\w{4}\\-\\d{5}")}</panel_attributes>
++ goal1: String {NotBlank}
++ reward1: String {NotBlank}
++ goal2: String {NotBlank}
++ reward2: String {NotBlank}
++ goal3: String {NotBlank}
++ reward3: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>448</x>
-      <y>476</y>
+      <x>406</x>
+      <y>511</y>
       <w>371</w>
       <h>126</h>
     </coordinates>
@@ -408,7 +411,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>448</x>
+      <x>441</x>
       <y>343</y>
       <w>371</w>
       <h>126</h>
@@ -419,6 +422,24 @@ has v</panel_attributes>
 + sector: String{NotBlank}
 + statement: String{NotBlank}
 + stars: Integer{Range(0,5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>651</y>
+      <w>252</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Requests
+--
++ title: String {NotBlank}
++ moment: Date{Temporal(TIMESTAMP), Past}
++ deadline Date{Temporal(TIMESTAMP), Future}
++ description: String {NotBlank}
++ reward: String {NotBlank}
++ ticker String{NotBlank, Pattern(regexp = "R\\w{4}\\-\\d{5}")}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

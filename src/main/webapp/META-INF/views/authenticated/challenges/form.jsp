@@ -17,7 +17,7 @@
 
 <acme:form readonly="true">
 	<acme:form-textbox code="authenticated.challenges.form.label.title" path="title" />
-	<acme:form-moment code="authenticated.challenges.form.label.moment" path="moment" />
+	<acme:form-moment code="authenticated.challenges.form.label.deadline" path="deadline" />
 	<acme:form-textbox code="authenticated.challenges.form.label.description" path="description" />
 	<acme:form-textbox code="authenticated.challenges.form.label.goal1" path="goal1" />
 	<acme:form-textbox code="authenticated.challenges.form.label.reward1" path="reward1" />

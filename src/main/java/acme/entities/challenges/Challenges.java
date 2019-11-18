@@ -25,7 +25,7 @@ public class Challenges extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Future
-	private Date				moment;
+	private Date				deadline;
 
 	@NotBlank
 	private String				description;

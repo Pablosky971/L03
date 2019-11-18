@@ -9,7 +9,7 @@
 # they accept any liabilities with respect to them.
 
 administrator.announcement.form.label.title= Titulo:
-administrator.announcement.form.label.moment= Momento:
+administrator.announcement.form.label.deadline= Momento:
 administrator.announcement.form.label.moreInfo= Mas informacion:
 administrator.announcement.form.label.text= Texto:
 administrator.announcement.form.button.return= Volver
