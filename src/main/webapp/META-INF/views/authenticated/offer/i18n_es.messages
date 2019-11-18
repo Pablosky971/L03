@@ -15,6 +15,7 @@ authenticated.offer.form.label.description= Descripción:
 authenticated.offer.form.label.moneyReward= RecompensaDeDinero:
 authenticated.offer.form.label.ticker= Teletipo:
 authenticated.offer.form.button.return= Volver
+authenticated.offer.form.button.create= Crear
 
 
 authenticated.offer.list.label.moment= Momento

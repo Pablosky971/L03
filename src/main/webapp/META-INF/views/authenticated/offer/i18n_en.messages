@@ -8,13 +8,15 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.offer.form.label.title= Moment:
-authenticated.offer.form.label.moment= Title:
+authenticated.offer.form.label.moment= Moment:
+authenticated.offer.form.label.title= Title:
 authenticated.offer.form.label.deadline= DeadLine:
 authenticated.offer.form.label.description= Description:
 authenticated.offer.form.label.moneyReward= MoneyReward:
 authenticated.offer.form.label.ticker= Ticker:
 authenticated.offer.form.button.return= Return
+authenticated.offer.form.button.create= Create
+
 
 authenticated.offer.list.label.moment= Moment
 authenticated.offer.list.label.title= Title

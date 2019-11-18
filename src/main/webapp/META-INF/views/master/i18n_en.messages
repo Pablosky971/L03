@@ -67,6 +67,7 @@ master.menu.consumer.companyRecords = List Company Records
 master.menu.consumer.requests = List Requests
 master.menu.consumer.offer = List Offers
 master.menu.consumer.challenges= List Challenges
+master.menu.consumer.offer.create = Create Offer
 
 # master.menu.user-account ####################################################
 
