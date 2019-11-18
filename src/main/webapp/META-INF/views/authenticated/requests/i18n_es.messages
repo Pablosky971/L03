@@ -15,6 +15,7 @@ authenticated.requests.form.label.description= Descripcion:
 authenticated.requests.form.label.reward= Recompensa:
 authenticated.requests.form.label.ticker= Teletipo:
 authenticated.requests.form.button.return= Volver
+authenticated.requests.form.button.create = Crear
 
 authenticated.requests.list.label.moment= Momento
 authenticated.requests.list.label.title= Titulo

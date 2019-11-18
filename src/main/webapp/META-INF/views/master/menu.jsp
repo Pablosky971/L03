@@ -1,4 +1,4 @@
-<%--
+	<%--
 - menu.jsp
 -
 - Copyright (c) 2019 Rafael Corchuelo.
@@ -35,10 +35,14 @@
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/list" />
 			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create" />
+			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.customisationParameters"
 				action="/administrator/customisationParameters/list" />
 			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create" />
+			<acme:menu-suboption code="master.menu.administrator.investor.create" action="/administrator/investor/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.investor" action="/administrator/investor/list" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
@@ -51,6 +55,8 @@
 			<acme:menu-suboption code="master.menu.provider.investor" action="/authenticated/investor/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.provider.requests" action="/authenticated/requests/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.provider.requests.create" action="/authenticated/requests/create" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.provider.offer" action="/authenticated/offer/list" />
 			<acme:menu-separator />

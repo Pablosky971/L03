@@ -39,7 +39,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.announcement = List Announcements
 master.menu.administrator.announcement.create = Create Announcement
 master.menu.administrator.investor = List Investor
-master.menu.administrator.companyRecords = List Company records
+master.menu.administrator.investor.create = Create Investor
 master.menu.administrator.customisationParameters = Customisation parameters
 master.menu.administrator.shutdown = Shut down
 
@@ -51,6 +51,7 @@ master.menu.provider.investor = List Investor Records
 master.menu.provider.announcement = List Announcement
 master.menu.provider.companyRecords = List Company Records 
 master.menu.provider.requests = List Requests
+master.menu.provider.requests.create = Create Request
 master.menu.provider.offer = List Offers
 master.menu.provider.challenges= List Challenges
 
