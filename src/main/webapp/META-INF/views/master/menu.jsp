@@ -43,6 +43,10 @@
 			<acme:menu-suboption code="master.menu.administrator.companyRecords" action="/administrator/companyRecord/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.companyRecords.create" action="/administrator/companyRecord/create" />
+      <acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.investor.create" action="/administrator/investor/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.investor" action="/administrator/investor/list" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

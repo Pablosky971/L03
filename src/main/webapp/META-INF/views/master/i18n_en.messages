@@ -44,6 +44,10 @@ master.menu.administrator.customisationParameters = List Customisation Parameter
 master.menu.administrator.shutdown = Shut Down
 master.menu.administrator.companyRecords = List Company Records
 master.menu.administrator.companyRecords.create = Create Company Record
+master.menu.administrator.investor.create = Create Investor
+
+
+
 
 # master.menu.provider ########################################################
 
