@@ -28,22 +28,28 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
-master.menu.anonymous.announcement = List Announcement
+master.menu.anonymous.announcement = List announcement
 master.menu.anonymous.investor= List Investor Records
 master.menu.anonymous.companyRecords = List Company records
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
-master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.user-accounts = User Accounts
 master.menu.administrator.announcement = List Announcements
 master.menu.administrator.announcement.create = Create Announcement
+master.menu.administrator.companyRecords = List Company Records
+master.menu.administrator.customisationParameters = List Customisation Parameters
+master.menu.administrator.shutdown = Shut Down
+master.menu.administrator.companyRecords = List Company Records
+master.menu.administrator.companyRecords.create = Create Company Record
 master.menu.administrator.investor = List Investor
 master.menu.administrator.investor.create = Create Investor
 master.menu.administrator.challenges = List Challenges
 master.menu.administrator.challenges.create = Create Challenge
-master.menu.administrator.customisationParameters = Customisation parameters
-master.menu.administrator.shutdown = Shut down
+
+
+
 
 # master.menu.provider ########################################################
 
