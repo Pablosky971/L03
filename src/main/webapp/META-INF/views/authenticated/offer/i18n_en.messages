@@ -16,6 +16,9 @@ authenticated.offer.form.label.moneyReward= MoneyReward:
 authenticated.offer.form.label.ticker= Ticker:
 authenticated.offer.form.button.return= Return
 authenticated.offer.form.button.create= Create
+authenticated.offer.error.must-accept = You must accept the creation of this offer
+authenticated.offer.label.accept = Are you sure of creating this offer?
+authenticated.requests.error.must-euro= The currency must be EUR.
 
 
 authenticated.offer.list.label.moment= Moment

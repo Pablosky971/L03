@@ -329,8 +329,8 @@ has v</panel_attributes>
     <coordinates>
       <x>133</x>
       <y>504</y>
-      <w>224</w>
-      <h>63</h>
+      <w>231</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>Announcement
 --
@@ -343,10 +343,10 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>651</x>
-      <y>728</y>
-      <w>252</w>
-      <h>84</h>
+      <x>434</x>
+      <y>679</y>
+      <w>259</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Challenges
 --
@@ -412,15 +412,13 @@ has v</panel_attributes>
 + stars: Integer{Range(0,5)}</panel_attributes>
     <additional_attributes/>
   </element>
-  
   <element>
     <id>UMLClass</id>
     <coordinates>
-
-      <x>196</x>
-      <y>623</y>
-      <w>336</w>
-      <h>175</h>
+      <x>728</x>
+      <y>658</y>
+      <w>315</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>Offer     
 --
@@ -430,18 +428,15 @@ has v</panel_attributes>
 + description: String {NotBlank}
 + moneyReward: Money {NotNull} 
 + ticker String{NotBlank, Pattern(regexp = "O\\w{4}\\-\\d{5}")}</panel_attributes>
-
     <additional_attributes/>
   </element>
-
-<element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
-
       <x>112</x>
       <y>651</y>
-      <w>252</w>
-      <h>84</h>
+      <w>273</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>Requests
 
@@ -452,7 +447,6 @@ has v</panel_attributes>
 + description: String {NotBlank}
 + reward: String {NotBlank}
 + ticker String{NotBlank, Pattern(regexp = "R\\w{4}\\-\\d{5}")}</panel_attributes>
-
     <additional_attributes/>
   </element>
 </diagram>

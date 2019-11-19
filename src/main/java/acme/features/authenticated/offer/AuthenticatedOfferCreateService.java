@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.offers.Offer;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -58,6 +59,12 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert model != null;
 
 		request.unbind(entity, model, "title", "deadline", "description", "moneyReward", "ticker");
+
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("accept", "false");
+		} else {
+			request.transfer(model, "accept");
+		}
 	}
 
 	@Override
@@ -74,6 +81,15 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		boolean isAccepted, isEuro;
+
+		isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "authenticated.requests.error.must-accept");
+
+		isEuro = entity.getMoneyReward().getCurrency().equals("EUR");
+		errors.state(request, isEuro, "EUR", "authenticated.requests.error.must-euro");
+
 	}
 
 	@Override
