@@ -44,6 +44,8 @@ master.menu.administrator.investor.create = Crear Investigador
 master.menu.administrator.companyRecords = Listar Compañias
 master.menu.administrator.companyRecords.create = Crear Compañia
 master.menu.administrator.customisationParameters = Listar parametros de personalización
+master.menu.administrator.challenges = Listar Retos
+master.menu.administrator.challenges.create = Crear Reto
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################
@@ -54,6 +56,7 @@ master.menu.provider.investor = Listar Investigadores
 master.menu.provider.announcement = Listar Anuncios
 master.menu.provider.companyRecords = Listar Compañias
 master.menu.provider.requests = Listar Solicitaciones
+master.menu.provider.requests.create = Crear Solicitacion
 master.menu.provider.offer = Listar Ofertas
 master.menu.provider.challenges= Listar Desafios
 
@@ -68,6 +71,7 @@ master.menu.consumer.companyRecords = Listar Compañias
 master.menu.consumer.requests = Listar Solicitaciones 
 master.menu.consumer.offer = Listar Ofertas
 master.menu.consumer.challenges= Listar Desafios
+master.menu.consumer.offer.create = Crear Oferta
 
 
 # master.menu.user-account ####################################################

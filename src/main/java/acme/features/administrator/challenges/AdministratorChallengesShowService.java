@@ -10,9 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.challenges;
-
-import java.util.Collection;
+package acme.features.administrator.challenges;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,16 +18,16 @@ import org.springframework.stereotype.Service;
 import acme.entities.challenges.Challenges;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractListService;
+import acme.framework.entities.Administrator;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedChallengesListService implements AbstractListService<Authenticated, Challenges> {
+public class AdministratorChallengesShowService implements AbstractShowService<Administrator, Challenges> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedChallengesRepository repository;
+	private AdministratorChallengesRepository repository;
 
 	// AbstractCreateService<Authenticated, Consumer> ---------------------------
 
@@ -47,16 +45,18 @@ public class AuthenticatedChallengesListService implements AbstractListService<A
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "deadline", "description");
+		request.unbind(entity, model, "title", "deadline", "description", "goal1", "reward1", "goal2", "reward2", "goal3", "reward3");
 	}
 
 	@Override
-	public Collection<Challenges> findMany(final Request<Challenges> request) {
+	public Challenges findOne(final Request<Challenges> request) {
 		assert request != null;
 
-		Collection<Challenges> result;
+		Challenges result;
+		int id;
 
-		result = this.repository.findManyAll();
+		id = request.getModel().getInteger("id");
+		result = this.repository.findOneChallengesById(id);
 
 		return result;
 	}

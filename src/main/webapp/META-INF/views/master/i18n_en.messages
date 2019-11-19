@@ -38,13 +38,15 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User Accounts
 master.menu.administrator.announcement = List Announcements
 master.menu.administrator.announcement.create = Create Announcement
-master.menu.administrator.investor = List Investor
 master.menu.administrator.companyRecords = List Company Records
 master.menu.administrator.customisationParameters = List Customisation Parameters
 master.menu.administrator.shutdown = Shut Down
 master.menu.administrator.companyRecords = List Company Records
 master.menu.administrator.companyRecords.create = Create Company Record
+master.menu.administrator.investor = List Investor
 master.menu.administrator.investor.create = Create Investor
+master.menu.administrator.challenges = List Challenges
+master.menu.administrator.challenges.create = Create Challenge
 
 
 
@@ -57,6 +59,7 @@ master.menu.provider.investor = List Investor Records
 master.menu.provider.announcement = List Announcement
 master.menu.provider.companyRecords = List Company Records 
 master.menu.provider.requests = List Requests
+master.menu.provider.requests.create = Create Request
 master.menu.provider.offer = List Offers
 master.menu.provider.challenges= List Challenges
 
@@ -70,6 +73,7 @@ master.menu.consumer.companyRecords = List Company Records
 master.menu.consumer.requests = List Requests
 master.menu.consumer.offer = List Offers
 master.menu.consumer.challenges= List Challenges
+master.menu.consumer.offer.create = Create Offer
 
 # master.menu.user-account ####################################################
 

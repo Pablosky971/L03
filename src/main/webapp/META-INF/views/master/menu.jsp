@@ -1,4 +1,4 @@
-<%--
+	<%--
 - menu.jsp
 -
 - Copyright (c) 2019 Rafael Corchuelo.
@@ -42,11 +42,15 @@
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.companyRecords" action="/administrator/companyRecord/list" />
 			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.administrator.companyRecords.create" action="/administrator/companyRecord/create" />
+      <acme:menu-suboption code="master.menu.administrator.companyRecords.create" action="/administrator/companyRecord/create" />
+      <acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.challenges" action="/administrator/challenges/list" />
+      <acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenges/create" />
+		  <acme:menu-separator />
+      <acme:menu-suboption code="master.menu.administrator.investor" action="/administrator/investor/list" />
       <acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.investor.create" action="/administrator/investor/create" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.administrator.investor" action="/administrator/investor/list" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
@@ -59,6 +63,8 @@
 			<acme:menu-suboption code="master.menu.provider.investor" action="/authenticated/investor/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.provider.requests" action="/authenticated/requests/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.provider.requests.create" action="/authenticated/requests/create" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.provider.offer" action="/authenticated/offer/list" />
 			<acme:menu-separator />
@@ -80,6 +86,9 @@
 			<acme:menu-suboption code="master.menu.consumer.offer" action="/authenticated/offer/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.consumer.challenges" action="/authenticated/challenges/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.consumer.offer.create" action="/authenticated/offer/create" />
+
 		</acme:menu-option>
 
 	</acme:menu-left>
