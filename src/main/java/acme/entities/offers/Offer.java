@@ -23,6 +23,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Currency;
+
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -54,6 +56,7 @@ public class Offer extends DomainEntity {
 	private String				description;
 
 	@NotNull
+	@Currency("EUR")
 	private Money				moneyReward;
 
 	@NotBlank
