@@ -18,4 +18,7 @@ public interface AuthenticatedRequestsRepository extends AbstractRepository {
 	@Query("select a from Requests a")
 	Collection<Requests> findManyAll();
 
+	@Query("select a from Requests a where a.ticker = ?1")
+	Requests findOneByTicker(String ticker);
+
 }

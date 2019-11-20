@@ -56,7 +56,6 @@ public class Requests extends DomainEntity {
 
 	@NotBlank
 	@Pattern(regexp = "R\\w{4}\\-\\d{5}")
-
 	private String				ticker;
 
 	// Derived attributes -----------------------------------------------------

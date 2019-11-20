@@ -82,7 +82,12 @@ public class AuthenticatedRequestsCreateService implements AbstractCreateService
 		assert entity != null;
 		assert errors != null;
 
-		boolean isAccepted;
+		boolean isAccepted, isDuplicated;
+
+		if (!errors.hasErrors("ticker")) {
+			isDuplicated = this.repository.findOneByTicker(entity.getTicker()) != null;
+			errors.state(request, !isDuplicated, "ticker", "consumer.requests.error.duplicated");
+		}
 
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.requests.error.must-accept");

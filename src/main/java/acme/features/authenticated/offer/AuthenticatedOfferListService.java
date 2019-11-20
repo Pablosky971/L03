@@ -47,7 +47,7 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "deadline", "description", "moneyReward", "ticker");
+		request.unbind(entity, model, "moment", "title", "description", "ticker");
 	}
 
 	@Override
