@@ -22,6 +22,7 @@ import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractCreateService;
 
@@ -87,7 +88,7 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.requests.error.must-accept");
 
-		isEuro = entity.getMoneyReward().getCurrency().equals("EUR");
+		isEuro = entity.getMoneyReward().getCurrency().equals("EUR") || entity.getMoneyReward().getCurrency().equals("€");
 		errors.state(request, isEuro, "EUR", "authenticated.requests.error.must-euro");
 
 	}
@@ -96,8 +97,14 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 	public void create(final Request<Offer> request, final Offer entity) {
 		Date moment;
 
+		Money m = new Money();
 		moment = new Date(System.currentTimeMillis() - 1);
 		entity.setMoment(moment);
+
+		//		m.setAmount(amount);
+
+		//		m.setCurrency(currency);
+
 		this.repository.save(entity);
 	}
 

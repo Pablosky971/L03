@@ -60,18 +60,6 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/" />
 			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.consumer.announcement" action="/authenticated/announcement/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.consumer.companyRecords" action="/authenticated/companyRecord/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.consumer.investor" action="/authenticated/investor/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.consumer.requests" action="/authenticated/requests/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.consumer.offer" action="/authenticated/offer/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.consumer.challenges" action="/authenticated/challenges/list" />
-			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.consumer.offer.create" action="/authenticated/offer/create" />
 
 		</acme:menu-option>
@@ -92,6 +80,19 @@
 				access="!hasRole('Consumer')" />
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update"
 				access="hasRole('Consumer')" />
+				
+			<acme:menu-suboption code="master.menu.consumer.announcement" action="/authenticated/announcement/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.consumer.companyRecords" action="/authenticated/companyRecord/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.consumer.investor" action="/authenticated/investor/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.consumer.requests" action="/authenticated/requests/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.consumer.offer" action="/authenticated/offer/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.consumer.challenges" action="/authenticated/challenges/list" />
+			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()" />
