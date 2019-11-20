@@ -18,4 +18,6 @@ public interface AuthenticatedOfferRepository extends AbstractRepository {
 	@Query("select a from Offer a")
 	Collection<Offer> findManyAll();
 
+	@Query("select a from Offer a where a.ticker = ?1")
+	Offer findOneByTicker(String ticker);
 }

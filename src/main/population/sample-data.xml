@@ -138,7 +138,7 @@
 		<property name="deadline" value="2020/06/10 9:30" />
 		<property name="description" value="This is a request" />
 		<property name="reward" value="One car" />
-		<property name="ticker" value="RXXXX-99999" />
+		<property name="ticker" value="RXXXA-99239" />
 	</bean>
 
 	<bean id="requests02" class="acme.entities.requests.Requests">
@@ -147,7 +147,7 @@
 		<property name="deadline" value="2020/06/11 9:30" />
 		<property name="description" value="This is a request" />
 		<property name="reward" value="One enum" />
-		<property name="ticker" value="RXXXX-99999" />
+		<property name="ticker" value="RPNXX-39129" />
 	</bean>
 
 	<bean id="requests03" class="acme.entities.requests.Requests">
@@ -156,7 +156,7 @@
 		<property name="deadline" value="2020/06/12 9:30" />
 		<property name="description" value="This is a request very old" />
 		<property name="reward" value="2500 dollars" />
-		<property name="ticker" value="RXXXX-99999" />
+		<property name="ticker" value="RXWYX-99129" />
 	</bean>
 
 	<bean id="offer01" class="acme.entities.offers.Offer">
@@ -164,7 +164,8 @@
 		<property name="moment" value="2019/06/10 9:35" />
 		<property name="deadline" value="2021/11/10 7:35" />
 		<property name="description" value="This is the description of the offer 01 made by DAGA" />
-		<property name="moneyReward" value="€ 103.3" />
+		<property name="minMoney" value="€ 300.3" />
+		<property name="maxMoney" value="€ 500.8" />
 		<property name="ticker" value="OBCDX-99699" />
 	</bean>
 
@@ -173,7 +174,8 @@
 		<property name="moment" value="2019/06/10 8:25" />
 		<property name="deadline" value="2021/11/7 7:15" />
 		<property name="description" value="This is the description of the offer 02 made by DAGA" />
-		<property name="moneyReward" value="€ 300.3" />
+		<property name="minMoney" value="€ 1003.30" />
+		<property name="maxMoney" value="€ 4000.52" />
 		<property name="ticker" value="ODDDD-73458" />
 	</bean>
 
@@ -182,7 +184,8 @@
 		<property name="moment" value="2019/06/10 6:27" />
 		<property name="deadline" value="2021/11/10 8:40" />
 		<property name="description" value="This is the description of the offer 03 made by DAGA" />
-		<property name="moneyReward" value="€ 200.5" />
+		<property name="minMoney" value="€ 89.03" />
+		<property name="maxMoney" value="€ 92.07" />
 		<property name="ticker" value="OKLMN-99999" />
 	</bean>
 

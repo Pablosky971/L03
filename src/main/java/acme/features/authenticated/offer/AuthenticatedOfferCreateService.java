@@ -59,7 +59,7 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "deadline", "description", "moneyReward", "ticker");
+		request.unbind(entity, model, "title", "deadline", "description", "minMoney", "maxMoney", "ticker");
 
 		if (request.isMethod(HttpMethod.GET)) {
 			model.setAttribute("accept", "false");
@@ -83,13 +83,34 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert entity != null;
 		assert errors != null;
 
-		boolean isAccepted, isEuro;
+		boolean isAccepted, isMinEuro, isMaxEuro, isMenorMoney, isDuplicated;
+
+		if (!errors.hasErrors("minMoney")) { //Comprobamos la currencys de ambos valores de dinero
+			String minCurrency = entity.getMinMoney().getCurrency();
+			isMinEuro = minCurrency.equals("€") || minCurrency.equals("EUR");
+			errors.state(request, isMinEuro, "minMoney", "consumer.offer.error.min-euro");
+		}
+
+		if (!errors.hasErrors("maxMoney")) {
+			String maxCurrency = entity.getMaxMoney().getCurrency();
+			isMaxEuro = maxCurrency.equals("€") || maxCurrency.equals("EUR");
+			errors.state(request, isMaxEuro, "maxMoney", "consumer.offer.error.max-euro");
+		}
+
+		if (!errors.hasErrors("maxMoney") && !errors.hasErrors("minMoney")) {
+			Double minAmount = entity.getMinMoney().getAmount();
+			Double maxAmount = entity.getMaxMoney().getAmount();
+			isMenorMoney = minAmount < maxAmount;
+			errors.state(request, isMenorMoney, "maxMoney", "consumer.offer.error.must-be-less");
+		}
+
+		if (!errors.hasErrors("ticker")) {
+			isDuplicated = this.repository.findOneByTicker(entity.getTicker()) != null;
+			errors.state(request, !isDuplicated, "ticker", "consumer.offer.error.duplicated");
+		}
 
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.requests.error.must-accept");
-
-		isEuro = entity.getMoneyReward().getCurrency().equals("EUR") || entity.getMoneyReward().getCurrency().equals("€");
-		errors.state(request, isEuro, "EUR", "authenticated.requests.error.must-euro");
 
 	}
 

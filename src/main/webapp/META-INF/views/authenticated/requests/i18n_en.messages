@@ -20,3 +20,4 @@ authenticated.requests.error.must-accept = You must accept the creation of this 
 authenticated.request.label.accept = Are you sure of creating this request?
 authenticated.requests.list.label.moment= Moment
 authenticated.requests.list.label.title= Title
+consumer.requests.error.duplicated= Ticker almost exists
